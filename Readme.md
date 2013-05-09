@@ -5,7 +5,7 @@ The d3 bilinear scale (with alterations), extracted for use in non-d3 projects.
 
 ## Installation
 
-		$ component install bmcmahen/scale-bilinear
+	$ component install bmcmahen/scale-bilinear
 
 ## API
 
