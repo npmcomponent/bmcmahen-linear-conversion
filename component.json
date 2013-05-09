@@ -1,0 +1,14 @@
+{
+  "name": "scale-bilinear",
+  "repo": "bmcmahen/scale-bilinear",
+  "description": "the d3 bilinear scale, extracted as a component for use in non d3 projects",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
