@@ -1,25 +1,8 @@
-// Full credit goes to d3 (https://github.com/mbostock/d3?source=cc) which this is
-// basically extracted from...
-
-module.exports = function(domain, range){
-  var uninter = uninterpolateNumber(domain[0], domain[1])
-    , inter = interpolateNumber(range[0], range[1]);
+module.exports = function linearConversion(a, b){
+  var o = a[1] - a[0]
+    , n = b[1] - b[0];
 
   return function(x){
-    return uninter(inter(x));
+    return (((x - a[0]) * n) / o) + b[0];
   };
 };
-
-function interpolateNumber(a, b){
-  b -= a = +a;
-  return function(t){
-    return a + b * t;
-  };
-}
-
-function uninterpolateNumber(a, b){
-  b = b - (a = +a) ? 1 / (b - a) : 0;
-  return function(x) {
-    return (x - a) * b;
-  };
-}

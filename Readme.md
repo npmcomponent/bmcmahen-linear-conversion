@@ -1,19 +1,19 @@
 
-# scale-bilinear
+# linear-conversion
 
-The d3 bilinear scale (with alterations), extracted for use in non-d3 projects.
+A basic linear conversion utlity. Scales a number from an old range to a new range.
 
 ## Installation
 
-	$ component install bmcmahen/scale-bilinear
+	$ component install bmcmahen/linear-conversion
 
 ## API
 
 	// Import the module
-	var scaleBilinear = require('bmcmahen-scale-bilinear');
+	var linearConversion = require('bmcmahen-linear-conversion');
 
 	// Create your scale, with a domain and range
-	var scale = scaleBilinear([0, 10], [0, 100]);
+	var scale = linearConversion([0, 10], [0, 100]);
 	alert(scale(1)); // alerts 10
 
 ## License
