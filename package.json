@@ -1,0 +1,9 @@
+{
+  "name": "bmcmahen-linear-conversion",
+  "description": "a basic linear conversion utility",
+  "version": "0.0.1",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {},
+  "license": "MIT"
+}
